@@ -9,15 +9,6 @@ public class Cliente {
 
 
 
-    public Cliente(String nombre, String id, String apellido, String fechaNacimiento, String ciudad, String estratoSocial, String tipoDePersona) {
-        this.nombre = nombre;
-        this.id = id;
-        this.apellido = apellido;
-        this.fechaNacimiento = fechaNacimiento;
-        this.ciudad = ciudad;
-        this.estratoSocial = estratoSocial;
-        this.tipoDePersona = tipoDePersona;
-    }
 
     public String getNombre() {
         return nombre;
