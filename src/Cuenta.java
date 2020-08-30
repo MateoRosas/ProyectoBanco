@@ -12,6 +12,7 @@ public class Cuenta {
     public Retiro retiro;
     public Transferencia transferencia;
     public Consulta consulta;
+    public double dineroCuenta;
 
     public String getIDCuenta() {
         return IDCuenta;

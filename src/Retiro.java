@@ -23,7 +23,11 @@ public class Retiro {
     }
 
     public boolean realizaRetiro(Cuenta cuenta){
-    return false;
+    if(cuenta.claveCliente == this.clave){
+        cuenta.dineroCuenta =- this.montoRetirar;
+        return true;
+    }
+        return false;
     }
 
     @Override
