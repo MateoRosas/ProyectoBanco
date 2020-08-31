@@ -126,7 +126,10 @@ public class Cuenta {
         return 0;
     }
 
-    public double calcularInteresesTotales(Producto producto){
+    public double calcularInteresesTotales(Producto producto, Cuenta cuenta){
+        if (this.retiro.realizaRetiro(cuenta) == true){
+            return this.retiro.montoRetirar*producto.interes;
+        }
         return 0;
     }
 

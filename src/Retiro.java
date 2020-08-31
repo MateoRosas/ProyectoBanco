@@ -17,18 +17,18 @@ public class Retiro {
     public String getClave() {
         return clave;
     }
-
+    public boolean realizaRetiro(Cuenta cuenta){
+        if(cuenta.claveCliente == this.clave){
+            cuenta.dineroCuenta =- this.montoRetirar;
+            return true;
+        }
+        return false;
+    }
     public void setClave(String clave) {
         this.clave = clave;
     }
 
-    public boolean realizaRetiro(Cuenta cuenta){
-    if(cuenta.claveCliente == this.clave){
-        cuenta.dineroCuenta =- this.montoRetirar;
-        return true;
-    }
-        return false;
-    }
+
 
     @Override
     public String toString() {
@@ -37,4 +37,5 @@ public class Retiro {
                 ", clave='" + clave + '\'' +
                 '}';
     }
+
 }
