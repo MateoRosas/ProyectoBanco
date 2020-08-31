@@ -122,7 +122,10 @@ public class Cuenta {
 
     }
 
-    public double descuentos(Producto producto){
+    public double descuentos(Producto producto, Cuenta cuenta){
+        if(this.consulta.realizaConsulta(cuenta)==true){
+           return this.producto.interes=0;
+        }
         return 0;
     }
 
